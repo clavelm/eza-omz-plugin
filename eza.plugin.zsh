@@ -14,7 +14,7 @@ alias l='ls -a'
 alias ld='l -D'
 
 # Long, file size prefixes, git status
-alias ll='ls -lbXH --git --group'
+alias ll='ls -lbXH --git --group --smart-group'
 # Long, all files, . & ..
 alias la='ll -a -a'
 
