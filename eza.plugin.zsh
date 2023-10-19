@@ -4,12 +4,25 @@ if ! (( $+commands[eza] )); then
 fi
 
 alias ls='eza --group-directories-first --icons --color-scale'
-alias lt='eza --tree --level=2 --icons' # Show in tree view
-alias l='ls -a'                         # Short, all files
-alias ld='l -D'                         # Short, only directories
-alias ll='ls -lbXH --git --group'       # Long, file size prefixes, git status
-alias la='ll -a -a'                     # Long, all files, . & ..
-alias lC='la --sort=changed'            # Long, sort changed
-alias lM='la --sort=modified'           # Long, sort modified
-alias lS='la --sort=size'               # Long, sort size
-alias lX='la --sort=extension'          # Long, sort extension
+
+# Show in tree view
+alias lt='eza --tree --level=2 --icons'
+
+# Short, all files
+alias l='ls -a'
+# Short, only directories
+alias ld='l -D'
+
+# Long, file size prefixes, git status
+alias ll='ls -lbXH --git --group'
+# Long, all files, . & ..
+alias la='ll -a -a'
+
+# Long, sort changed
+alias lC='la --sort=changed'
+# Long, sort modified
+alias lM='la --sort=modified'
+# Long, sort size
+alias lS='la --sort=size'
+# Long, sort extension
+alias lX='la --sort=extension'
