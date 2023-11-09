@@ -3,7 +3,7 @@ if ! (( $+commands[eza] )); then
   return 1
 fi
 
-alias ls='eza --group-directories-first --icons --color-scale'
+alias ls='eza --group-directories-first --icons --color-scale=all --color-scale-mode=gradient'
 
 # Show in tree view
 alias lt='eza --tree --level=2 --icons'
