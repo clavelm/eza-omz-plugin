@@ -6,7 +6,7 @@ fi
 alias ls='eza --group-directories-first --icons --color-scale=all --color-scale-mode=gradient'
 
 # Show in tree view
-alias lt='eza --tree --level=2 --icons'
+alias lt='ls --tree --level=2'
 
 # Short, all files
 alias l='ls -a'
