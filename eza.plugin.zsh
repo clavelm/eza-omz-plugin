@@ -3,20 +3,26 @@ if ! (( $+commands[eza] )); then
   return 1
 fi
 
-alias ls='eza --group-directories-first --icons --color-scale=all --color-scale-mode=gradient'
+alias ls='eza --group-directories-first --icons \
+              --color-scale=all --color-scale-mode=gradient'
 
 # Show in tree view
 alias lt='ls --tree --level=2'
 
 # Short, all files
-alias l='ls -a'
+alias l='ls --all'
 # Short, only directories
-alias ld='l -D'
+alias ld='l --only-dirs'
 
 # Long, file size prefixes, git status
-alias ll='ls -lbXH --git --group --smart-group'
+alias ll='ls --long \
+             --binary \
+             --group --smart-group \
+             --dereference \
+             --links \
+             --git'
 # Long, all files, . & ..
-alias la='ll -a -a'
+alias la='ll --all --all'
 
 # Long, sort changed
 alias lC='la --sort=changed'
