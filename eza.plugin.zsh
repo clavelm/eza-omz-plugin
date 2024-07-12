@@ -18,7 +18,6 @@ alias ld='l --only-dirs'
 alias ll='ls --long \
              --binary \
              --group --smart-group \
-             --dereference \
              --links \
              --git'
 # Long, all files, . & ..
